@@ -1,6 +1,6 @@
 <script type="text/javascript" src="js/scripts.js"></script>
 
-<body onresize="changeBackgroundColour()">
+<body onresize="changeBackgroundColor()">
 	<table id="score">
 		<tr class="row">
 			<td class="cell heading">Subject</td>
@@ -11,8 +11,8 @@
 			<td class="cell text">Maths</td>
 			<td id="grade" class="cell number">100%</td>
 			<td>
-				<button onclick="deceaseValue">Decrease</button>
-				<button>Increase</button>
+				<button onclick="decreaseValue()">Decrease</button>
+				<button onclick="increaseValue()">Increase</button>
 			</td>
 		</tr>
 	</table>
@@ -23,7 +23,7 @@
 			<td class="cell heading">Age</td>
 			<td>Action Button</td>
 		</tr>
-		<tr class="row">
+		<tr class="row" id="coloredRow">
 			<td class="cell text">Andy</td>
 			<td class="cell number">25</td>
 			<td>
